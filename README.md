@@ -1,6 +1,6 @@
 # Paper Reading Notes
 
-Some paper reading notes shared with my lab mates. Might be good to keep an archive here.
+Some paper reading notes previously shared with my lab mates. Might be good to keep an archive here.
 
 ## Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution
 **Authors:** Judea Pearl  
@@ -12,7 +12,7 @@ Some paper reading notes shared with my lab mates. Might be good to keep an arch
 **My two cents**: It is always good to learn about the boundary of the research we do from the people who work beyond that dimension. It helps us to understand what is doable and what is not, and more importantly, what is worth doing within the boundary.
 
 
-## A generative vision model that trains with high data efficiency and breaks text-based CAPTCHAs 
+## A generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs 
 **Authors:** D. George, W. Lehrach, K. Kansky, M. Lázaro-Gredilla, C. Laan, B. Marthi, X. Lou, Z. Meng, Y. Liu, H. Wang, A. Lavin, D. S. Phoenix  
 **URL:** http://science.sciencemag.org/content/early/2017/10/26/science.aag2612  
 **Tag:** Generative Models
@@ -39,6 +39,15 @@ Notes: Imitation learning is to learn to behave (i.e. learn a policy) by followi
 **Notes:** An interesting paper from ICLR 2017 (oral paper). They proposed a method for policy learning by predicting the future observations, instead of by learning from sparse scalar reward. One appealing aspect of this method is that it generalizes to changing goals. This methods won the VizDoom game competition.
 
 **My two cents**: For policy learning in a sequencial decision process that has many steps, learning only from the final scalar reward may require very large number of simulatins and can be very inefficient. This proposed method is more of a supervised learning method, where the agent can learn from every single step. The intuition is that given (1) current observation (e.g. a frame in a video game), (2) your current measurement value (e.g. your health level, dropping below 0 means you are dead), and (3) your goal (i.e. your desired measurement value after taking an action), predicts an action that will most likely to reach your goal. This is quite a clever idea. While, on the negative side, I don’t think such method can be applied in a broad range of applications. Most of the sequencial decision problems that do not involve a simulator will not likely to provide such meaningful information or feedback after taking each action. This makes me wonder the real impact of this proposed method.
+
+
+## Mastering the Game of Go without Human Knowledge
+**Authors:** David Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja Huang, Arthur Guez, Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton, Yutian Chen, Timothy Lillicrap, Fan Hui, Laurent Sifre, George van den Driessche, Thore Graepel, Demis Hassabis  
+**URL:** https://www.nature.com/nature/journal/v550/n7676/pdf/nature24270.pdf  
+**Tag:** RL
+
+**My two cents**: I read the Deepmind blog post a while ago, but just read the full paper today. This paper explains the core ideas behind and the differences to the previous version Alpha Go clearly. The main difference comparing to Alpha Go Fan (the public released version: “Mastering the game of Go with deep neural networks and tree search”) is that (1) they did RL from scratch instead of pre-training the model with human games, and (2) they use a single neural network for policy and value function rather than using separated networks, and (3) they proposed a new RL training method that incorporates lookahead search inside training loop. The idea behind the 3rd point is very similar to the method used in “Learning to Act By Predicting the Future” that I shared in late September. In this work, there is no new algorithm, but these simple and classical methods are so effective when putting together in the right way. Comparing to many recent papers that “innovatively” put sub system components together or combine bag of tricks, this paper can give us a lot more insight in doing good research and building good systems.
+
 
 
 ## Zero-Shot Learning - The Good, the Bad and the Ugly
