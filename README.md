@@ -2,7 +2,7 @@
 
 Some paper reading notes shared with my lab mates. Might be good to keep an archive here.
 
-### Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution
+## Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution
 **Authors:** Judea Pearl  
 **URL:** https://arxiv.org/pdf/1801.04016.pdf  
 **Tag**: Theory  
@@ -12,7 +12,7 @@ Some paper reading notes shared with my lab mates. Might be good to keep an arch
 **My two cents**: It is always good to learn about the boundary of the research we do from the people who work beyond that dimension. It helps us to understand what is doable and what is not, and more importantly, what is worth doing within the boundary.
 
 
-### A generative vision model that trains with high data efficiency and breaks text-based CAPTCHAs 
+## A generative vision model that trains with high data efficiency and breaks text-based CAPTCHAs 
 **Authors:** D. George, W. Lehrach, K. Kansky, M. Lázaro-Gredilla, C. Laan, B. Marthi, X. Lou, Z. Meng, Y. Liu, H. Wang, A. Lavin, D. S. Phoenix  
 **URL:** http://science.sciencemag.org/content/early/2017/10/26/science.aag2612  
 **Tag:** Generative Models
@@ -20,7 +20,7 @@ Some paper reading notes shared with my lab mates. Might be good to keep an arch
 **Notes:** A paper published on Science magazine. They proposed a probabilistic generative model that outperforms deep neural networks on a challenging scene text recognition benchmark (CAPTCHAs) while being 300-fold more data efficient. Such generative models address the point that human learns new concepts by generalizing from only a few examples instead of from thousands of examples as deep NN methods do. This usually requires a model to learn from a top-down approach, rather than in a botton-up manner. It reminds me of another generative model paper from CMU Ruslan on human-level concept learning: http://www.cs.toronto.edu/~rsalakhu/papers/LakeEtAl2015Science.pdf
 
 
-### Generative Adversarial Imitation Learning 
+## Generative Adversarial Imitation Learning 
 **Authors:** Jonathan Ho, Stefano Ermon  
 **URL:** https://papers.nips.cc/paper/6391-generative-adversarial-imitation-learning  
 **Tag:** RL; GAN
@@ -31,7 +31,7 @@ Notes: Imitation learning is to learn to behave (i.e. learn a policy) by followi
 
 [1] Ng, Andrew Y., and Stuart J. Russell. “Algorithms for inverse reinforcement learning.” ICML. 2000. http://ai.stanford.edu/~ang/papers/icml00-irl.pdf
 
-### Learning to Act by Predicting the Future 
+## Learning to Act by Predicting the Future 
 **Authors:** Alexey Dosovitskiy, Vladlen Koltun  
 **URL:** https://openreview.net/pdf?id=rJLS7qKel  
 **Tag:** RL; Control
@@ -41,7 +41,7 @@ Notes: Imitation learning is to learn to behave (i.e. learn a policy) by followi
 **My two cents**: For policy learning in a sequencial decision process that has many steps, learning only from the final scalar reward may require very large number of simulatins and can be very inefficient. This proposed method is more of a supervised learning method, where the agent can learn from every single step. The intuition is that given (1) current observation (e.g. a frame in a video game), (2) your current measurement value (e.g. your health level, dropping below 0 means you are dead), and (3) your goal (i.e. your desired measurement value after taking an action), predicts an action that will most likely to reach your goal. This is quite a clever idea. While, on the negative side, I don’t think such method can be applied in a broad range of applications. Most of the sequencial decision problems that do not involve a simulator will not likely to provide such meaningful information or feedback after taking each action. This makes me wonder the real impact of this proposed method.
 
 
-### Zero-Shot Learning - The Good, the Bad and the Ugly
+## Zero-Shot Learning - The Good, the Bad and the Ugly
 **Authors:** Yongqin Xian, Bernt Schiele, Zeynep Akata  
 **URL:** https://arxiv.org/pdf/1703.04394.pdf  
 **Tags:** Zero Shot Learning
