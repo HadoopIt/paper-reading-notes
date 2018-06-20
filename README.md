@@ -12,7 +12,7 @@ Some paper reading notes previously shared with my lab mates. Might be good to k
 **My two cents**: It is always good to learn about the boundary of the research we do from the people who work beyond that dimension. It helps us to understand what is doable and what is not, and more importantly, what is worth doing within the boundary.
 
 
-## A generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs 
+## A Generative Vision Model that Trains with High Data Efficiency and Breaks Text-based CAPTCHAs 
 **Authors:** D. George, W. Lehrach, K. Kansky, M. Lázaro-Gredilla, C. Laan, B. Marthi, X. Lou, Z. Meng, Y. Liu, H. Wang, A. Lavin, D. S. Phoenix  
 **URL:** http://science.sciencemag.org/content/early/2017/10/26/science.aag2612  
 **Tag:** Generative Models
@@ -25,7 +25,7 @@ Some paper reading notes previously shared with my lab mates. Might be good to k
 **URL:** https://papers.nips.cc/paper/6391-generative-adversarial-imitation-learning  
 **Tag:** RL; GAN
 
-Notes: Imitation learning is to learn to behave (i.e. learn a policy) by following an expert’s demonstrations. Usually a reward function has to be learned at the same time from the demonstration (i.e. Inverse Reinforcement Learning, IRL) as reward is considered as the most succinct and robust definition of a task [1]. This learned reward function is then used for learning the policy. IRL is a widely used method for imitation learning. GAN for imitation learning is doing exactly the same thing. The generator works as a policy network (i.e. to generate a sequence of actions), and discriminator works as a reward function (i.e. always to give the expert or true action sequence the highest score). The generator or the policy module is optimized with policy gradient. The discriminator or the reward function is optimized in a supervised manner using, say, cross entropy loss or hinge loss. 
+**Notes:** Imitation learning is to learn to behave (i.e. learn a policy) by following an expert’s demonstrations. Usually a reward function has to be learned at the same time from the demonstration (i.e. Inverse Reinforcement Learning, IRL) as reward is considered as the most succinct and robust definition of a task [1]. This learned reward function is then used for learning the policy. IRL is a widely used method for imitation learning. GAN for imitation learning is doing exactly the same thing. The generator works as a policy network (i.e. to generate a sequence of actions), and discriminator works as a reward function (i.e. always to give the expert or true action sequence the highest score). The generator or the policy module is optimized with policy gradient. The discriminator or the reward function is optimized in a supervised manner using, say, cross entropy loss or hinge loss. 
 
 **My two cents**: GANs, Inverse Reinforcement Learning, Imitation Learning, all are very popolar terms but internally very closely related.
 
