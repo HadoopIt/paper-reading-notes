@@ -1,4 +1,4 @@
-# paper-reading-notes
+# Paper Reading Notes
 
 Some paper reading notes shared with my lab mates. Might be good to keep an archive here.
 
