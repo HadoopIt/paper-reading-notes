@@ -2,6 +2,20 @@
 
 Some paper reading notes previously shared with my lab mates. Might be good to keep an archive here.
 
+
+## BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+**Authors:** Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
+**URL:** https://arxiv.org/pdf/1810.04805.pdf
+**Tag**: Deep Learning; NLP  
+
+**Notes:** This paper released two days ago received tremendous attention from the NLP community. I guess it might bring up a wave of "pre-training is all you need" papers in the next couple of months - just kidding. BERT is a language representation model, which is trained on very large corpus with extreme model size using humongous computational power.  It beats the state-of-the-art results on eleven different natural language processing tasks at once. You already can tell who did this work. Yes, it is made by Google. One may argue that such scale of experiments is far beyond the reach of researchers in academia and most of the industrial labs, but they do offer us a number of important lessons: 
+
+1. Deep learning IS representation learning. "We show that pre-trained representations eliminate the needs of many heavily engineered task-specific architectures". On 11 NLP tasks where they achieved SOTA results, the fine-tuning was made on top of the pre-trained representation with a LINEAR output layer. In the evaluation on a sequence labeling task (NER), without any effort on modeling the label dependencies (i.e. non-autoregressive and no CRF), the model beats the SOTA numbers. The model shows its strong capability in representation learning.
+
+2. Scale matters. "One of our core claims is that the deep bidirectionality of BERT, which is enabled by masked LM pre-training, is the single most important improvement of BERT compared to previous work". Such bidirectional masked LM is by no means a new idea, but they were able to run it (with innovations) at such a scale and verify the representation power that it has. Researchers in various labs might also have experimented with such models, but they might have missed the opportunity to discover the true power of the model. This may also apply to many other models that people have designed and discarded. 
+
+3. Pre-training is important. "We believe that this is the first work to demonstrate that scaling to extreme model sizes also leads to large improvements on very small-scale tasks, provided that the model has been sufficiently pre-trained". This is good to know since people have applied pre-training and performed fine-tuning or transfer learning in many different fields, e.g. ImageNet pre-training in CV, Word2Vec in NLP. They used Transformer model, but I believe very similar results can be achieved with LSTM or GRU, if not considering parallelism in computing.
+
 ## Theoretical Impediments to Machine Learning With Seven Sparks from the Causal Revolution
 **Authors:** Judea Pearl  
 **URL:** https://arxiv.org/pdf/1801.04016.pdf  
