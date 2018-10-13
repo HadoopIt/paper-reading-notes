@@ -4,8 +4,8 @@ Some paper reading notes previously shared with my lab mates. Might be good to k
 
 
 ## BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
-**Authors:** Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
-**URL:** https://arxiv.org/pdf/1810.04805.pdf
+**Authors:** Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova  
+**URL:** https://arxiv.org/pdf/1810.04805.pdf  
 **Tag**: Deep Learning; NLP  
 
 **Notes:** This paper released two days ago received tremendous attention from the NLP community. I guess it might bring up a wave of "pre-training is all you need" papers in the next couple of months - just kidding. BERT is a language representation model, which is trained on very large corpus with extreme model size using humongous computational power.  It beats the state-of-the-art results on eleven different natural language processing tasks at once. You already can tell who did this work. Yes, it is made by Google. One may argue that such scale of experiments is far beyond the reach of researchers in academia and most of the industrial labs, but they do offer us a number of important lessons: 
